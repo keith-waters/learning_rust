@@ -1,0 +1,36 @@
+Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control.
+
+Who Rust is for:
+- Teams of Developers
+	- Why?: The compiler catches a ton of the traditional low-level code bugs. Teams with varying experience can work without fear.
+	- Modern tooling
+- Students
+	- Why: Welcoming community, intro to systems concepts
+- Companies:
+	- Lots of companies use it for lots of different things
+- Open Source Developers
+	- people who want to contribute to the language, community, dev tools and libraries
+- People who value speed and stability
+	- Speed of running the code and speed of creating the code
+	- stability: the compiler checks to make sure legacy code will run
+
+Who this book is for:
+Someone who has programming experience and wants to learn Rust
+
+How to use this book:
+It assumes you'll be reading it front to back (I will)
+2 types of chapters: concept and project
+Chapters 2, 12, and 20 are projects, the rest are concept.
+
+Ferris will show up doing different gestures for different meanings
+- ? ferris === this code does not compile
+- claws up ferris === this code panics!
+- one claw up === this code does not produce the desired behavior
+
+Source Code
+the book's code is on github
+
+Tools:
+- Cargo: dependency manager and build tool
+- Rustfmt: code styler
+- Rust Language Server: IDE code completion and inline error messages
