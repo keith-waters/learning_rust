@@ -1,0 +1,7 @@
+This book fully embraces the potential of Rust to empower its users.
+
+Rust lang is fundamentally about empowerment.
+
+Authors of the Forword:
+Nicholas Matsakis: Not sure? Seems to work at AWS and use rust
+Aaron Turon: http://aturon.github.io/about/ Looks like he works at Mozilla on Rust lang.
