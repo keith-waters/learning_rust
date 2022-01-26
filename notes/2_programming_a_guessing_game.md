@@ -73,7 +73,34 @@ Generating a random number
 
 Comparing the guess to the secret number
 
+- `use std::cmp::Ordering` brings the `Ordering` type into scope
+- the `cmp` method compares 2 values and can be called on anything that can be compared
+- `Ordering` type is another enumeration with 3 variants: Less, Greater, Equal
+- a match expression is used to decide what to do based on which variant of `Ordering` is returned
+- match expressions are made up of arms
+  - an arm consists of a pattern to match against
+- using the `cmp` method, types must match
+- Rust defaults to i32 (signed 32-bit number) for number types
+- other number types are u32, i32, i64
+- `let guess: u32 = guess.trim().parse().expect("Please type a number!");`
+  - `guess` is already defined, but Rust allows us to _shadow_ the previous value of `guess`
+  - `guess.trim().parse()` takes the original `guess` and trims any whitespace, carriage returns or newline characters at the begining and end
+  - `parse()` converts a String into some kind of number. the `let guess: u32` tells it which type
+  - `parse()` only works for strings that can be logically parsed into numbers, thus it can fail
+  - Because `parse` can fail it returns a Result type
 
+Allowing multiple guesses with Looping
+- `loop` creates an infinite loop! (like while(true) in ruby/js)
+- you can Ctrl-c or type not a number to quit 'a' instead of '1'
+
+Quiting after a correct guess
+- add a `break` in the `Ordering::Equal` arm of the match expression
+
+Handling invalid input
+- add a match expression after parsing the guess into a number
+  - if `Ok` return the number
+  - if `Err` `continue` this will go to the next iteration
+  - in `Err(_) => continue` the `_` is a catchall value that we do nothing with
 
 
 
